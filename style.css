@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+body {
+  background-color: teal;
+  margin: auto 0;
+  font-family: cursive;
+  position: relative;
+  padding: 0;
+}
+/*HEADER*/
+.header {
+}
+.my-title{
+  color:greenyellow;
+  background-color: teal;
+}
+/*GAME*/
+.game {
+  border: greenyellow solid 5px;
+  border-radius: 10px;
+  width: 500px;
+  height: 310px;
+  margin: auto;
+  position: relative;
+}
+#bg {
+  height: 300px;
+  width: 500px;
+  position: absolute;
+}
+#platform {
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 175px;
+}
+#character {
+  width: 50px;
+  height: 100px;
+  
+  position: relative;
+  top: 150px;
+  left: 200px;
+}
+#player {
+  height: 50px;
+  top: 50px;
+  position: absolute;
+}
+.animate {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+#block {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  top: 130px;
+  left: 500px;
+ 
+  animation: block 2s infinite;
+}
+#bullet {
+  height: 20px;
+  position: absolute;
+}
+@keyframes block {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+/* SCORE BOARD*/
+.score {
+  background-color: teal;
+  color: greenyellow;
+  font-size: 20px;
+  margin: auto;
+}
+/* ABOUT THE GAME*/
+ul > li >  p {
+  text-align: left;
+}
+p {
+  text-align: center;
+}

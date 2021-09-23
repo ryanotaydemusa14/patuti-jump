@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jump Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="col-12" style="height: 10px; background-color: maroon"></div>
+    <div class="header row">
+      <div class="col-12 text-center p-2 my-title">
+        <p style="font-size: 40px">PaTuTi JuMp</p>
+      </div>
+    </div>
+    <!--GAME-->
+    <div class="col-12">
+      <div class="game">
+        <img id="bg" src="moves/background.png" alt="bg" />
+        <img id="platform" src="moves/area.png" alt="platform" />
+        <div id="character">
+          <img id="player" src="moves/patuti.png" alt="" />
+        </div>
+        <div id="block">
+          <img id="bullet" src="moves/bullet_h.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--SCOREBOARD-->
+    <div class="score col-12 p-1">
+      <p>Score: <span id="scoreSpan"></span></p>
+    </div>
+    <div class="row justify-content-center">
+      <div
+        class="col-md-6 col-10 bg-warning"
+        style="border-radius: 10px; color: rgb(71, 2, 2); font-weight: bolder"
+      >
+        <p style="font-size: 25px; padding-top: 10px">ABOUT THE GAME</p>
+        <ul>
+          <li>
+            <p>
+              Patuti is an alien character who is being accused of being a
+              hostile creature by the public.
+            </p>
+          </li>
+          <li>
+            <p>
+              Try to save Patuti by
+              <span style="color: red">tapping/clicking the screen</span> so he
+              can jump and avoid the approaching bullets. You can earn points
+              for each successful bullet evasion by Patuti. Share your results
+              with others and become the King of Patuti Jump!
+            </p>
+          </li>
+          <li>
+            <p>
+              This is a simple HTML, CSS, and JavaScript project for the course
+              Project made with Bootstrap for responsive Web Layout for both Mobile and Desktop devices.
+              IT461 Advanced Web Systems.
+            </p>
+          </li>
+          <li>
+            <p>
+              Website Made By: Ryan Otayde Musa, IT student of Cebu Institute of
+              Technology-University
+            </p>
+          </li>
+          <li>
+            <p>
+              Credits to
+              <span
+                class="text-warning"
+                style="
+                  background-color: maroon;
+                  border-radius: 5px;
+                  padding: 0px 5px 0px 5px;
+                "
+                >Instructor Eugine C. Busico</span
+              >
+              for providing ideas,images, and lessons for this project
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="col-12"
+      style="
+        height: 20px;
+        bottom: 0;
+        background-color: maroon;
+      "
+    ></div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
