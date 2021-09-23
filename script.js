@@ -21,7 +21,7 @@ var checkDead = setInterval(function () {
   );
   if (blockLeft < 230 && blockLeft > 200 && characterTop >= 130) {
     block.style.animation = "none";
-    alert("Patuti is Dead, Try again?  score: "+Math.floor(counter/100));
+  //  alert("Patuti is Dead, Try again?  score: "+Math.floor(counter/100));
     counter = 0;
     block.style.animation = "block 1s infinite linear";
   } else {
